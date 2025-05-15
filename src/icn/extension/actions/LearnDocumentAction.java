@@ -48,7 +48,6 @@ public class LearnDocumentAction  extends PluginAction {
 
     @Override
     public String getActionModelClass() {
-        //return "";
         return "learns/action/LearnDocumentAction";
     }
 
