@@ -1,0 +1,355 @@
+{
+  "magazineColumns": [
+    {
+      "filterable": false,
+      "decorator": "MagazineViewDecorator.newThumbnailDecorator",
+      "field": "thumbnail",
+      "name": "",
+      "width": "60px",
+      "setCellValue": "MagazineViewDecorator.newThumbnailCellValue",
+      "widgetsInCell": true
+    },
+    {
+      "extraFieldsToDisplay": [],
+      "filterable": false,
+      "fieldsToDisplay": [
+        {
+          "field": "LastModifier",
+          "displayName": "Modified By"
+        },
+        {
+          "field": "DateLastModified",
+          "displayName": "Modified On"
+        }
+      ],
+      "decorator": "MagazineViewDecorator.contentCellDecorator",
+      "field": "content",
+      "allowEventBubble": true,
+      "name": "",
+      "setCellValue": "MagazineViewDecorator.contentCellValue",
+      "widgetsInCell": true
+    },
+    {
+      "filterable": true,
+      "field": "{NAME}",
+      "name": "Name",
+      "width": "0",
+      "style": "display: none;"
+    }
+  ],
+  "sortIndex": 3,
+  "columns": {
+    "cells": [
+      [
+        {
+          "headerClasses": "ecmIconCell",
+          "filterable": false,
+          "decorator": "DetailsViewDecorator.multiStateDecorator",
+          "field": "multiStateIcon",
+          "widthWebKit": "25px",
+          "cellClasses": "ecmIconCell",
+          "name": "&nbsp;",
+          "nosort": true,
+          "width": "16px",
+          "sortable": false,
+          "headerAriaLabel": "Item State Icons",
+          "states": [
+            "isLocked"
+          ]
+        },
+        {
+          "headerClasses": "ecmIconCell",
+          "filterable": false,
+          "decorator": "DetailsViewDecorator.mimeTypeDecorator",
+          "field": "mimeTypeIcon",
+          "cellClasses": "ecmIconCell",
+          "name": "&nbsp;",
+          "width": "17px",
+          "nosort": true,
+          "sortable": false,
+          "headerAriaLabel": "MIME Type Icon"
+        },
+        {
+          "filterable": true,
+          "field": "{NAME}",
+          "name": "Name",
+          "width": "20em",
+          "sortable": true
+        },
+        {
+          "filterable": false,
+          "field": "ContentSize",
+          "name": "Size",
+          "width": "5.0em",
+          "sortable": true,
+          "class": "gridxCellNumber"
+        },
+        {
+          "filterable": false,
+          "field": "LastModifier",
+          "name": "Modified By",
+          "width": "11.0em",
+          "sortable": true
+        },
+        {
+          "filterable": false,
+          "field": "DateLastModified",
+          "name": "Modified On",
+          "width": "11.0em",
+          "sortable": true
+        },
+        {
+          "filterable": false,
+          "field": "MajorVersionNumber",
+          "name": "Major Version",
+          "width": "9.8em",
+          "sortable": true
+        }
+      ]
+    ]
+  },
+  "docid": "Folder,{7A464D42-FD59-4149-87E2-D7C803464602},{80699073-0000-C716-BA5A-48CC4D31FBB2}",
+  "templates": [
+    {
+      "template_name": "Document",
+      "template_label": "Document",
+      "template_desc": "Document"
+    }
+  ],
+  "pageSize": 200,
+  "showNotesIcon": false,
+  "template_label": null,
+  "dates": {},
+  "sortformats": {
+    "dataFormat": "%m\/%d\/%Y",
+    "timeFormat": "hh:mm:ss"
+  },
+  "rows": [
+    {
+      "template": "Document",
+      "privileges": -1100856847,
+      "dataObject": false,
+      "modifyPermissions": true,
+      "supportsTag": true,
+      "supportsRecommendation": true,
+      "template_label": "Document",
+      "capabilityComment": "documentonly",
+      "supportsBoxShare": false,
+      "vsId": "{505BC296-0000-C01C-BB03-7AA6062D5C54}",
+      "syncEnabled": false,
+      "contentSize": 25133,
+      "isExternalDocument": false,
+      "accessMask": 998911,
+      "id": "Document,{7A464D42-FD59-4149-87E2-D7C803464602},{405BC296-0000-C81F-9049-C100B7DC38E5}",
+      "rootfolder": false,
+      "objectStoreDisplayName": "dos",
+      "versionStatusInt": "1",
+      "supportsDownloadCount": true,
+      "currentVersion": true,
+      "objectStoreName": "dos",
+      "name": "BPMDE(3).properties",
+      "objectStoreId": "{7A464D42-FD59-4149-87E2-D7C803464602}",
+      "attributes": {
+        "MajorVersionNumber": [
+          1,
+          "xs:integer",
+          null,
+          null,
+          true,
+          null,
+          {
+            "isSystem": true
+          }
+        ],
+        "LastModifier": [
+          "ceadmin",
+          "xs:string",
+          null,
+          "ceadmin",
+          true,
+          null,
+          {
+            "isSystem": true,
+            "userInfo": {
+              "isOwner": false,
+              "displayName": "ceadmin",
+              "name": "uid=ceadmin,o=defaultWIMFileBasedRealm",
+              "id": "S-1-98-1664628272-828453937-858928685-1714695525-942486585-758396467-1647916082-1631007283-1630810214-67108864",
+              "shortName": "ceadmin",
+              "type": 1
+            }
+          }
+        ],
+        "{NAME}": [
+          "BPMDE(3).properties",
+          "xs:string",
+          null,
+          null,
+          null,
+          null,
+          {
+            "isSystem": false
+          }
+        ],
+        "MinorVersionNumber": [
+          0,
+          "xs:integer",
+          null,
+          null,
+          true,
+          null,
+          {
+            "isSystem": true
+          }
+        ],
+        "ContentSize": [
+          25133,
+          "xs:double",
+          "fileSize",
+          null,
+          true,
+          null,
+          {
+            "isSystem": true
+          }
+        ],
+        "DateLastModified": [
+          "2025-05-12T02:38:06.540Z",
+          "xs:timestamp",
+          null,
+          null,
+          true,
+          null,
+          {
+            "isSystem": true
+          }
+        ]
+      },
+      "mimetype": "application\/octet-stream",
+      "isFavorite": false
+    },
+    {
+      "template": "Document",
+      "privileges": -1100856847,
+      "dataObject": false,
+      "modifyPermissions": true,
+      "supportsTag": true,
+      "supportsRecommendation": true,
+      "template_label": "Document",
+      "capabilityComment": "documentonly",
+      "supportsBoxShare": false,
+      "vsId": "{80A6CC96-0000-C31E-BA63-EE783C138006}",
+      "syncEnabled": false,
+      "contentSize": 1326,
+      "isExternalDocument": false,
+      "accessMask": 998911,
+      "id": "Document,{7A464D42-FD59-4149-87E2-D7C803464602},{80A6CC96-0000-C216-BD5D-AF6C0844B6EE}",
+      "rootfolder": false,
+      "objectStoreDisplayName": "dos",
+      "versionStatusInt": "1",
+      "supportsDownloadCount": true,
+      "currentVersion": true,
+      "objectStoreName": "dos",
+      "name": "Details.txt",
+      "objectStoreId": "{7A464D42-FD59-4149-87E2-D7C803464602}",
+      "attributes": {
+        "MajorVersionNumber": [
+          1,
+          "xs:integer",
+          null,
+          null,
+          true,
+          null,
+          {
+            "isSystem": true
+          }
+        ],
+        "LastModifier": [
+          "ceadmin",
+          "xs:string",
+          null,
+          "ceadmin",
+          true,
+          null,
+          {
+            "isSystem": true,
+            "userInfo": {
+              "isOwner": false,
+              "displayName": "ceadmin",
+              "name": "uid=ceadmin,o=defaultWIMFileBasedRealm",
+              "id": "S-1-98-1664628272-828453937-858928685-1714695525-942486585-758396467-1647916082-1631007283-1630810214-67108864",
+              "shortName": "ceadmin",
+              "type": 1
+            }
+          }
+        ],
+        "{NAME}": [
+          "Details.txt",
+          "xs:string",
+          null,
+          null,
+          null,
+          null,
+          {
+            "isSystem": false
+          }
+        ],
+        "MinorVersionNumber": [
+          0,
+          "xs:integer",
+          null,
+          null,
+          true,
+          null,
+          {
+            "isSystem": true
+          }
+        ],
+        "ContentSize": [
+          1326,
+          "xs:double",
+          "fileSize",
+          null,
+          true,
+          null,
+          {
+            "isSystem": true
+          }
+        ],
+        "DateLastModified": [
+          "2025-05-14T02:36:27.676Z",
+          "xs:timestamp",
+          null,
+          null,
+          true,
+          null,
+          {
+            "isSystem": true
+          }
+        ]
+      },
+      "mimetype": "text\/plain",
+      "isFavorite": false
+    }
+  ],
+  "totalCount": 0,
+  "num_results": 2,
+  "totalCountType": "none",
+  "template_name": "Document",
+  "sortDirection": 1,
+  "showLocation": false,
+  "repositoryId": "Dos",
+  "messages": [
+    {
+      "number": "0",
+      "adminResponse": null,
+      "moreInformation": null,
+      "text": "The Test folder returned 2 items.",
+      "explanation": null,
+      "userResponse": null
+    }
+  ],
+  "repositoryRecordType": "Plain",
+  "printersConfigured": false,
+  "sessioninactivelimit": 1800
+}

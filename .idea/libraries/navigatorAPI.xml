@@ -1,0 +1,12 @@
+<component name="libraryTable">
+  <library name="navigatorAPI">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/Desktop/desktop/FileNet Libs/navigatorAPI.jar!/" />
+      <root url="jar://$USER_HOME$/Desktop/desktop/FileNet Libs/Jace.jar!/" />
+      <root url="jar://$USER_HOME$/Desktop/desktop/FileNet Libs/log4j.jar!/" />
+      <root url="jar://$USER_HOME$/Desktop/desktop/FileNet Libs/servlet-api-2.5.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

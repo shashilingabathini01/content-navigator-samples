@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="KMPlugin">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/Desktop/desktop/KM Plugin/KMPlugin.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>
