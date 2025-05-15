@@ -2,6 +2,7 @@ package icn.extension;
 
 import com.ibm.ecm.extension.*;
 import icn.extension.actions.LearnDocumentAction;
+import icn.extension.filters.AddItemRequestFilter;
 import icn.extension.filters.ModifyResponse;
 
 import java.util.Locale;
@@ -47,7 +48,9 @@ public class ICNLearnPlugin extends Plugin {
 
     @Override
     public PluginRequestFilter[] getRequestFilters() {
-        return super.getRequestFilters();
+        return  new PluginRequestFilter[] {
+                new AddItemRequestFilter()
+        };
     }
 
     @Override
