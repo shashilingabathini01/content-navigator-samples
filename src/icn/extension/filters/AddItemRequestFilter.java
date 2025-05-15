@@ -2,6 +2,7 @@ package icn.extension.filters;
 
 import com.ibm.ecm.extension.PluginRequestFilter;
 import com.ibm.ecm.extension.PluginServiceCallbacks;
+import com.ibm.json.java.JSONArray;
 import com.ibm.json.java.JSONArtifact;
 import com.ibm.json.java.JSONObject;
 import org.apache.struts.action.ActionForm;
@@ -33,10 +34,25 @@ public class AddItemRequestFilter extends PluginRequestFilter {
                     if(formFile != null) {
                        String mimeType =  formFile.getContentType();
                         System.out.println("mimeType is "+mimeType);
+                        if(mimeType.equals("application/msword"))
+                            return getError();
                     }
                 }
             }
         }
         return  null;
     }
+
+    private JSONObject getError() {
+        JSONObject jsonResponse = new JSONObject();
+        JSONArray jsonErrors = new JSONArray();
+        JSONObject errorMessage = new JSONObject();
+        errorMessage.put("text", "application/word is not allowed to upload ");
+        errorMessage.put("explanation","Need to upload a different document with different mimetype");
+        jsonErrors.add(errorMessage);
+        jsonResponse.put("errors",jsonErrors);
+        return  jsonResponse;
+    }
+
+
 }
