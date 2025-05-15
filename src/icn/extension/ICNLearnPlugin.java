@@ -53,7 +53,7 @@ public class ICNLearnPlugin extends Plugin {
     @Override
     public PluginResponseFilter[] getResponseFilters() {
         return  new PluginResponseFilter[]{
-            new ModifyResponse()
+          //  new ModifyResponse()
         };
     }
 
