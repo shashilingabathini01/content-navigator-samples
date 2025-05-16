@@ -40,7 +40,7 @@ public class AddItemRequest extends PluginRequestFilter {
         JSONArray errors = new JSONArray();
         JSONObject error = new JSONObject();
         error.put("text","Upload failed");
-        error.put("message","Invalid Mimetype, accepts only pdf formats");
+        error.put("errorMessage","Invalid Mimetype, accepts only pdf formats");
         errors.add(error);
         jsonResponse.put("errors",errors);
         return  jsonResponse;
