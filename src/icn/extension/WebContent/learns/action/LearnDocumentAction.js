@@ -23,6 +23,9 @@ define(["dojo/_base/declare","ecm/model/Action","dojo/_base/lang","ecm/widget/di
                 text : attributes
             });
             message.show();
+        },
+        showInformation: function(data) {
+            v
         }
     });
 });

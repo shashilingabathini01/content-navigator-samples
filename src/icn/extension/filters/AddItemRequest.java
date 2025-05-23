@@ -1,7 +1,5 @@
 package icn.extension.filters;
-
 import com.ibm.ecm.extension.PluginRequestFilter;
-import com.ibm.ecm.extension.PluginRequestUtil;
 import com.ibm.ecm.extension.PluginServiceCallbacks;
 import com.ibm.json.java.JSONArray;
 import com.ibm.json.java.JSONArtifact;
