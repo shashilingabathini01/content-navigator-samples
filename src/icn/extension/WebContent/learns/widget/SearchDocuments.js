@@ -4,7 +4,7 @@ define([
     "dojo/text!./templates/SearchDocuments.html"
    ], function(declare, _LaunchBarPane, template) {
 
-    return declare("learns.widget.layout.SearchDocuments",[_LaunchBarPane],{
+    return declare("learns.widget.SearchDocuments",[_LaunchBarPane],{
         templateString : template,
         widgetsInTemplate : true,
 
@@ -16,8 +16,8 @@ define([
         loadContent: function() {
             if(!this.isLoaded) {
                 console.log("loading content");
-                	this.isLoaded  = true;
-                	this.needReset = false;
+                    this.isLoaded  = true;
+                    this.needReset = false;
             }
         }
     })

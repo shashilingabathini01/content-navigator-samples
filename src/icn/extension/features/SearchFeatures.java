@@ -37,7 +37,7 @@ public class SearchFeatures extends PluginFeature {
 
     @Override
     public String getContentClass() {
-        return "learns.widget.layout.SearchDocuments";
+        return "learns.widget.SearchDocuments";
     }
 
     @Override
