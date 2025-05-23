@@ -2,11 +2,10 @@ define([
     "dojo/_base/declare",
     "ecm/widget/layout/_LaunchBarPane",
     "dojo/text!./templates/SearchDocuments.html"
-   ], function(declare, _LaunchBarPane) {
+   ], function(declare, _LaunchBarPane, template) {
 
     return declare("learns.widget.layout.SearchDocuments",[_LaunchBarPane],{
         templateString : template,
-
         widgetsInTemplate : true,
 
         postCreate: function() {
