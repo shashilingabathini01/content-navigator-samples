@@ -31,7 +31,7 @@ public class SearchDocumentsService extends  PluginService{
             String searchText = httpServletRequest.getParameter("searchText");
             String repo_id = pluginServiceCallbacks.getRepositoryId();
             if (repo_id == null) {
-                repo_id = "KM";
+                repo_id = "ECM";
             }
             Subject subject = pluginServiceCallbacks.getP8Subject(repo_id);
             UserContext.get().pushSubject(subject);
