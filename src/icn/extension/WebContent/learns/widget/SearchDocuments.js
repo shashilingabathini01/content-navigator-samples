@@ -39,7 +39,6 @@ define([
 
         loadContent: function() {
             if (!this.isLoaded) {
-
                 this.isLoaded =  true;
                 this.needReset = false;
             }
@@ -53,7 +52,7 @@ define([
             }
             console.dir(gridLayout)
             this.documents.setColumns(gridLayout);
-        },
+        }
 
         _setGridStore : function() {
             var gridData = {
