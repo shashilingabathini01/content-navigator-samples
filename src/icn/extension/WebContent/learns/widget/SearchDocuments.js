@@ -23,7 +23,6 @@ define([
 
         postCreate : function() {
             this.inherited(arguments);
-           // this._setEmptyGrid();
         },
         loadContent: function() {
             if (!this.isLoaded) {
