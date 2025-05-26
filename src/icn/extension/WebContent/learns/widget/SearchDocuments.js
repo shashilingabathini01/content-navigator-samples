@@ -10,8 +10,7 @@ define([
      "dijit/layout/BorderContainer",
      "dijit/layout/ContentPane",
      "dijit/form/TextBox",
-     "dijit/form/Button",
-     "gridx/Grid"
+     "dijit/form/Button"
 ] , function(declare,_LaunchBarPane,ItemFileWriteStore,MessageDialog,Request,lang,connect,template) {
     return declare("learns.widget.SearchDocuments",[ _LaunchBarPane ] ,{
         templateString : template,
