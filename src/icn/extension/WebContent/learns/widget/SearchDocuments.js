@@ -16,13 +16,15 @@ define([
      "gridx/modules/ColumnResizer"
 ] , function(declare,_LaunchBarPane , MessageDialog, Request,  lang , connect, template) {
     return declare("learns.widget.SearchDocuments",[ _LaunchBarPane ] ,{
+
         templateString : template,
+
         widgetsInTemplate : true,
 
         postCreate : function() {
             this.inherited(arguments);
             this._setEmptyGrid();
-        }
+        },
 
         _setEmptyGrid : function() {
             var gridData = {
@@ -52,7 +54,7 @@ define([
             }
             console.dir(gridLayout)
             this.documents.setColumns(gridLayout);
-        }
+        },
 
         _setGridStore : function() {
             var gridData = {
@@ -86,7 +88,7 @@ define([
             }));
             this.documents.startup();
             this.documents.resize();
-        }
+        },
 
         searchDocuments : function() {
             if (this.searchText.value() == "") {
