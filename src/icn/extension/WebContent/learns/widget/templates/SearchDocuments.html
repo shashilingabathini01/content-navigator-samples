@@ -1,8 +1,11 @@
-<div >
-    <div data-dojo-attach-point="_borderContainer" data-dojo-type="dijit/layout/BorderContainer" class="contentPane" >
-        <div data-dojo-type="dijit/layout/ContentPane" title = "" style="overflow:hidden;" data-dojo-attach-point="searchDocuments">
-            This is the sample feature
+<div class="ecmCenterPane">
+    <div data-dojo-type="dijit/layout/BorderContainer" data-dojo-atatch-point="mainContainer" data-dojo-props="gutters:false">
+            <div data-dojo-type="dijit/layout/ContentPane">
+                <div data-dojo-type="dijit/form/TextBox" data-dojo-atatch-point="searchText"> </div>
+                <div  data-dojo-type="dijit/form/Button"  data-dojo-attach-event="click: searchDocuments"> Search Documents</div>
+            </div>
+        <div data-dojo-type="dijit/layout/ContentPane">
+            <div data-dojo-type="gridx/Grid" data-dojo-atatch-point="documents"></div>
         </div>
     </div>
-<div>
-
+</div>

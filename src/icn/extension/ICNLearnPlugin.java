@@ -2,7 +2,7 @@ package icn.extension;
 
 import com.ibm.ecm.extension.*;
 import icn.extension.actions.LearnDocumentAction;
-import icn.extension.features.SearchFeatures;
+import icn.extension.features.SearchDocuments;
 import icn.extension.filters.AddItemRequest;
 
 import java.util.Locale;
@@ -62,7 +62,9 @@ public class ICNLearnPlugin extends Plugin {
 
     @Override
     public PluginFeature[] getFeatures() {
-        return new PluginFeature[] { new SearchFeatures()};
+        return new PluginFeature[] {
+                new SearchDocuments()
+        };
     }
 
     @Override

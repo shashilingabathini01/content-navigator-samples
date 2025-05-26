@@ -4,7 +4,7 @@ import com.ibm.ecm.extension.PluginFeature;
 
 import java.util.Locale;
 
-public class SearchFeatures extends PluginFeature {
+public class SearchDocuments extends PluginFeature {
     @Override
     public String getId() {
         return "SearchDocuments";
@@ -17,7 +17,7 @@ public class SearchFeatures extends PluginFeature {
 
     @Override
     public String getDescription(Locale locale) {
-        return "A feature for searching documents";
+        return "Plugin feature for searching documents";
     }
 
     @Override
