@@ -4,7 +4,9 @@ define([
      "dojo/text!./templates/SearchDocuments.html",
      "dijit/layout/BorderContainer",
      "dijit/layout/ContentPane",
-     "dijit/form/TextBox"
+     "dijit/form/TextBox",
+     "dijit/form/Button",
+     "gridx/Grid"
 ] , function(declare,_LaunchBarPane,template) {
     return declare("learns.widget.SearchDocuments",[ _LaunchBarPane ] ,{
         templateString : template,
