@@ -60,7 +60,7 @@ public class SearchDocumentsService extends  PluginService{
 
     private  JSONArray getRows(String searchText, ObjectStore objectStore) {
         JSONArray rows = new JSONArray();
-        SearchSQL searchSQL = new SearchSQL("SELECT DocumentTitle, Id , CreatedBy , DateAdded , EmployeeName , EmployeeId from Employee WHERE DocumentTitle LIKE '%"+searchText+"%'");
+        SearchSQL searchSQL = new SearchSQL("SELECT DocumentTitle, Id , Creator , DateCreated , PersonName , PersonId from Person WHERE DocumentTitle LIKE '%"+searchText+"%'");
         SearchScope searchScope = new SearchScope(objectStore);
         RepositoryRowSet repositoryRowSet =  searchScope.fetchRows(searchSQL,Integer.MAX_VALUE , null , Boolean.FALSE);
         Iterator<RepositoryRow> rowIterator = repositoryRowSet.iterator();
@@ -68,10 +68,10 @@ public class SearchDocumentsService extends  PluginService{
             RepositoryRow row =  rowIterator.next();
             JSONObject rowObject = new JSONObject();
             rowObject.put("documentTitle",row.getProperties().getStringValue("DocumentTitle"));
-            rowObject.put("createdBy",row.getProperties().getStringValue("CreatedBy"));
-            rowObject.put("createdOn",row.getProperties().getObjectValue("DateAdded"));
-            rowObject.put("employeeName",row.getProperties().getStringValue("EmployeeName"));
-            rowObject.put("employeeId",row.getProperties().getStringValue("EmployeeId"));
+            rowObject.put("createdBy",row.getProperties().getStringValue("Creator"));
+            rowObject.put("createdOn",row.getProperties().getObjectValue("DateCreated"));
+            rowObject.put("personName",row.getProperties().getStringValue("PersonName"));
+            rowObject.put("personId",row.getProperties().getStringValue("PersonId"));
             rowObject.put("documentId",row.getProperties().getIdValue("Id").toString());
         }
         return  rows;
@@ -102,14 +102,14 @@ public class SearchDocumentsService extends  PluginService{
 
 
         JSONObject employeeName = new JSONObject();
-        title.put("displayName","Employee Name");
-        title.put("value","employeeName");
+        title.put("displayName","Person Name");
+        title.put("value","personName");
         columns.add(createdOn);
 
 
         JSONObject employeeId = new JSONObject();
-        title.put("displayName","Employee Id");
-        title.put("value","employeeId");
+        title.put("displayName","Person Id");
+        title.put("value","personId");
         columns.add(employeeId);
 
         return  columns;
