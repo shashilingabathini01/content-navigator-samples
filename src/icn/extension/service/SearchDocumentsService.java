@@ -37,9 +37,10 @@ public class SearchDocumentsService extends  PluginService{
             UserContext.get().pushSubject(subject);
             ObjectStore objectStore = pluginServiceCallbacks.getP8ObjectStore(repo_id);
             JSONObject documents =  getDocuments(searchText,objectStore);
-
-            jsonResponse.put("columns", documents.get("columns"));
-            jsonResponse.put("rows", documents.get("rows"));
+            JSONObject results = new JSONObject();
+            results.put("columns",documents.get("columns"));
+            results.put("rows",documents.get("rows"));
+            jsonResponse.put("results",results);
             jsonResponse.put("error", null);
             jsonResponse.put("status","success");
 
