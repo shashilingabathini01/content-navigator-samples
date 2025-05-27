@@ -2,7 +2,7 @@ define([
      "dojo/_base/declare",
      "ecm/widget/layout/_LaunchBarPane",
      "dojo/data/ItemFileWriteStore",
-     "ecm/widget/dialog/MessageDialog"
+     "ecm/widget/dialog/MessageDialog",
      "ecm/model/Request",
      "dojo/_base/lang",
      "dojo/_base/connect",
